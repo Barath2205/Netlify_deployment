@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>pan update form</title>
+    <style>
+        .heading{
+            background-color: maroon;
+            color: whitesmoke;
+            text-align: center
+        }
+        h4{
+            margin: 0px;
+        }
+        span{
+            color: red;
+        }
+        u{
+            color: orange;
+        }
+        body{
+        margin: 0px; 
+        background-color:lightyellow ;   
+        }
+        table,tr,td{
+            border: 1px solid black;
+            border-collapse: collapse;
+
+        }
+    </style>
+</head>
+<body>
+    <div class="heading">
+<h4> <b>Request For New PAN Card Or/And Changes Or Corrections In PAN data </b></h4>
+<div><i>Fields marked with <span>*</span>(asterisk) are mandatory. To avoid mistake(s), please refer <u>guidelines</u> and <u>instructions</u>
+</i></div>
+</div>
+<table  style ="width:100%">
+    <tr>
+        <td>
+
+        </td>
+        <td>
+            <span>*</span><b>whether citizen of India</b>
+            <label for="yes" style ="padding-left: 80px;">Yes</label>
+            <input type="radio" name="" id="yes">
+            <label for="no" style="padding-left: 30px;">NO</label>
+            <input type="radio" name="" id="no">
+        </td>
+        </td>
+    </tr>
+<td></td>
+<td><span>*</span><b>Permanent Account Number(PAN)</b><input type = "text" name="" id=""></td>
+<tr></tr>
+<tr>
+    <td style="width: 5px;"><input type ="checkbox" name ="" id ="">
+<td><b><span>*</span>1. Name</b></td>
+</tr>
+
+<tr>
+    <td></td>
+    <td>
+        <b>Title</b>
+        <label for = "Mr" style="padding-left: 30px;">Shri/Mr</label>
+        <input type = "radio" name ="" id="">
+        <label for = "Mrs" style="padding-left: 30px;">smr/Mr</label>
+        <input type = "radio" name ="" id="">
+        <label for = "Kumari" style="padding-left: 30px;">Kumari/Ms</label>
+        <input type = "radio" name ="" id=""> 
+    </td>
+</tr>
+<tr>
+    <td></td>
+    <td>
+        <div style ="display: inline-block;">
+        <lable for ="lastname"><b>Lastname/Surname</b></lable><br>
+        <input type ="text" name="" id="Lastname">
+        </div>
+        <div style ="display: inline-block;padding-left: 200px;">
+        <lable for ="firstname"><b>Firstname</b></lable><br>
+        <input type ="text" name="" id="Firstname">
+    </div>
+         <div style ="display: inline-block;padding-left: 200px;">
+        <lable for ="middleName"><b>MiddleName</b></lable><br>
+        <input type ="text" name="" id="MiddleName">
+    </div>
+    </td>
+</tr>
+<tr>
+    <td></td>
+    <td>
+        <b><span>*</span> Name as you would like it printed on the Card </b><span style ="color:blue">(prefix like shri,smt,Kumari,late,Dr,CA,Ms,Mr,Mrs,M/s,Alias etc. are not allowded)</span>
+    </td>
+</tr>
+<tr>
+    <td></td>
+    <td><input type="text" name="" id=""></td>
+</tr>
+<tr>
+    <td> </td>
+    <td><b>Details of Parents.</b><span style ="color:blue">(prefix like shri,smt,Kumari,late,Dr,CA,Ms,Mr,Mrs,M/s,Alias etc. are not allowded)</span></td>
+</tr>
+<tr>
+    <td></td>
+    <td><b>Whether mother is single parent and you wish to apply for PAN by Furnishing the name of your mother only</b></td>
+    <td>
+        <lable for ="yes">yes</lable>
+        <input type="radio" name="" id="Yes">
+        <label for ="no">No</label>
+        <input type="radio" name="" id="No">
+    </td>
+</tr>
+<tr>
+    <td>
+        <input type="checkbox" name="" id="">
+    </td>
+    <td><b><span>*</span> Father's name </b>(mandatory Field, Even married women should give father's name only.)</td>
+</tr>
+<tr>
+    <td></td>
+    <td>
+        <div style ="display: inline-block;">
+            <lable for ="lastname"><b>Lastname/Surname</b></lable><br>
+            <input type ="text" name="" id="Lastname">
+        </div>
+        <div style ="display: inline-block;padding-left: 200px;">
+            <lable for ="firstname"><b>Firstname</b></lable><br>
+            <input type ="text" name="" id="Firstname">
+        </div>
+        <div style ="display: inline-block;padding-left: 200px;">
+            <lable for ="MiddleName"><b>MiddleName</b></lable><br>
+                <input type ="text" name="" id="MiddleName">
+        </div>
+    </td>
+</tr>
+</table>
+</body>
+</html>
