@@ -1,21 +1,205 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
-    <title>Document</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Figma Landing Page Task</title>
+    <style>
+        .flexcontainer {
+            display: flex;
+            flex-direction: row;
+            background-color:rgb(250, 250, 250);
+            width: 100%;
+            height: 100%;
+            text-align: justify;
+            justify-content: space-between;
+            justify-content: center;
+
+        }
+
+        .flexcontainer1 {
+            display: flex;
+            flex-direction: row;
+            background-color:rgb(250, 250, 250);
+            text-align: justify;
+            justify-content: center;
+            display: grid;
+            grid-template-columns: 1fr 5fr;
+            padding-left:150px;
+
+        }
+
+        .child1 {
+            margin: 100px;
+        }
+
+        .child2 {
+            margin: 100px;
+        }
+
+        body {
+            text-align: justify;
+            margin-top: 10px;
+            margin-left: 100px;
+            margin-right: 100px;
+            margin-bottom: 50px;
+            background-color: rgb(250, 250, 250);
+        }
+
+        span {
+            color: rgb(252, 128, 12);
+
+        }
+
+        button {
+            background-color: rgb(252, 128, 12);
+            border: none;
+            border-radius: 10px;
+            margin: none;
+            padding: 20px;
+            color: white;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 15px;
+            height: 30px;
+            width: 80px;
+
+        }
+
+        .logbtn {
+            text-decoration: none;
+            color: rgb(252, 128, 12);
+            padding-left: 60px;
+        }
+
+        .sigbtn {
+            text-decoration: none;
+            background-color: rgb(252, 128, 12);
+            color: white;
+            padding: 10px 5px 10px;
+            border-radius: 10px;
+            margin-left: 10px;
+        }
+
+        .discover {
+            text-decoration: none;
+            color: rgb(252, 128, 12);
+            border: 1px solid rgb(252, 128, 12);
+            padding: 12px;
+            border-radius: 5px;
+            width: 60px;
+        }
+
+        .lastbox {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: center;
+            justify-content: space-around;
+            text-align: center;
+            width: 60%;
+            background-color: white;  
+            line-height: 3px;
+            padding: 20px;
+            margin-left: 200px;
+        }
+
+        .explore {
+            text-decoration: none;
+            color: white;
+            background-color: rgb(252, 128, 12);
+            margin-top: 20px;
+            text-align: justify;
+            padding: 25px 20px 25px 20px;
+            border-radius: 10px;
+        }
+
+        select {
+            border: 0px;
+            font-size: 14px;
+            padding-bottom: 10px;
+            text-align: justify;
+            justify-content: space-around;
+            background-color: white;
+            
+        }
+
+        label {
+            text-align: center;
+        }
+    </style>
 </head>
+
 <body>
-<form method="POST">
-<label for="email">Email</label><br>
-<input type="email" name="email" id="email"><br>
-<label for="pas">Password</label><br>
-<input type="password" name="pass" id="pas">
-<input type="submit" onclick="foo()" value="submit">
-<script>
-    function foo(){
-        console.log("Hello Guvi !!!!!.....");
-    }
-</script>
-</form>
+    <div class="flexcontainer" style="padding-top: 10px;">
+        <div>
+            <b>Trabook</b>
+        </div>
+        <div>
+            <img src="Trabook.jpg" alt="Trabook" width="40" height="20">
+        </div>
+        <div style="padding-left: 150px;">
+            <label for="Home"> Home</label>
+            <label for="Abt" style="padding-left:25px;">About</label>
+            <label for="destination" style="padding-left:25px;">Destination</label>
+            <label for="Tour" style="padding-left:25px;">Tour</label>
+            <label for="Blog" style="padding-left:25px;">Blog</label>
+        </div>
+        <div style="padding-left: 40px;">
+            <a href="" class="logbtn">Login</a>
+            <a href="" class="sigbtn" style="margin-left:30px;">Signup</a>
+        </div>
+    </div>
+
+    <div class="flexcontainer1">
+        <div class="child1">
+            <h2>Get Started your exciting<span>journey</span>with us.</h2><br>
+            <p> A Team of experienced tourism professionals will provide you with the best advice and tips for your
+                desire place
+            </p><br><br>
+            <a href="" class="discover">Discover Now</a>
+        </div>
+        <div class="child2">
+            <img src="Figma.jpg" alt="Figma" width="400" height="350">
+        </div>
+    </div>
+
+
+    <div class="lastbox">
+        <div style="align-items: center;" >
+            <select name="cars" id="cars">
+                <option value="location">location</option>
+            </select>
+            <br>
+            <br>
+            <br>
+            <label for="where">Where are you going</label>
+        </div>
+        <div>
+            <select name="Date" id="Date">
+                <option value="Date">Date</option>
+            </select>
+            <br>
+            <br>
+            <br>
+            <label for="where">When you will go</label>
+        </div>
+        <div>
+      <select name="cars" id="cars">
+   <option value="Guests">Guest</option>
+            </select>
+            <br>
+            <br>
+            <br>
+            <label for="where">Number of guest</label>
+        </div>
+
+        <a href="" class="explore">Explore Now</a>
+
+    </div>
+
 </body>
+
 </html>
